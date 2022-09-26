@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Levi Windows';
+    src: url('/fonts/LEVIWINDOWS.TTF');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Levi Windows', sans-serif;
+    font-size: 30px;
+    background: url('/images/win95.webp');
+}
+nav, 
+main, 
+aside, 
+footer {
+    border-right: 3px solid rgb(108, 8, 106);
+    border-bottom: 3px solid rgb(141, 6, 139);
+    border-left: 3px solid rgb(255, 255, 255);
+}
+
+main, 
+aside, 
+footer,
+section,
+article {
+    background-color: #fcc9fa;
+}
+.grid-container {
+    display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-areas: 
+        'header header header'
+        'nav main aside'
+        'nav footer footer';
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+}
+.cool_story {
+    display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-areas: 
+        'header header'
+        'part1 part2'
+        'footer footer';
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+.gallery__page {
+    display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-areas: 
+        'header'
+        'gallery'
+        'gallery__desc'
+        'footer';
+    grid-template-columns: 1fr;
+    gap: 20px; 
+}
+.aboutme {
+    display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-areas: 
+        'header header'
+        'bio skills'
+        'footer footer';
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+        'header'
+        'nav'          
+        'main' 
+        'aside'
+        'footer';
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+main h1 {
+    font-size: 50px;
+    font-weight:normal;
+}
+nav { 
+    grid-area: nav;
+}
+nav h3 {
+    font-size: 40px;
+    font-weight:normal;
+}
+.part__1 h3, .part__2 h3 { 
+    font-size: 40px;
+    font-weight:normal;
+}
+.skills h2, .bio h2 {
+    font-size: 40px;
+    font-weight:normal;
+}
+footer {
+    grid-area: footer;
+}
+aside {
+    grid-area: aside;
+}
+.part1 {
+    grid-area: article;
+}
+.part2 {
+    grid-area: article;
+}
+section {
+    grid-area: gallery;
+}
+section {
+    grid-area: gallery__desc;
+}
+section {
+    grid-area: bio;
+}
+article {
+    grid-area: skills;
+}
+aside h3 {
+    font-size: 40px;
+    font-weight:normal;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 600px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .items {
+        padding: 20px 0px;
+        text-align: center;
+    }   
+}
+nav.nav__links {
+    background-color: #fcc9fa;
+}
+nav.menu {
+    padding: 5px !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.items {
+    background-color: rgb(154, 154, 154);
+    padding: 15px 15px 10px 15px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid white;
+}
+.items:hover {
+    background-color: white;
+}
+.menu a {
+    font-size: 40px;   
+    text-decoration: none;
+    color: black;
+}
+.img-desc {
+    width: 100%;
+    max-width: 715px;
+    height: auto;
+  }
+.nav__links ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav__links li {
+    padding: 7px;
+}
+.nav__links a {
+    color:rgb(141, 6, 139);
+}
+.nav__links a:hover {
+    color:black;
+}
+.fa-caret-left {
+    font-size: 28px;
+}
+.win_design {
+    text-align: right;
+    background-color: rgb(141, 6, 139);
+    padding-bottom: 3px;
+}
+.win_design .fa-square-xmark {
+    margin-right: 5px;
+    color: white;
+    font-size: 20px;
+}
+.content {
+    padding: 10px;
+}
+.part__1, .part__2 {
+    background-color: #fcc9fa;
+}
+.photo {
+    max-width: 406px;
+    max-height: 400px;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 10px 10px #fcc9fa;
+}
+.gallery__desc {
+    text-align: center;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 600px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.fa-instagram, .fa-facebook, .fa-linkedin {
+    font-size: 24px;
+    padding: 5px;
+}
+.footer__content {
+    text-align: center
+};
