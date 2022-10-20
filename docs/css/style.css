@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Levi Windows';
-    src: url('fonts/LEVIWINDOWS.TTF');
+    src: url('../fonts/LEVIWINDOWS.TTF');
 }
 
 * {
@@ -12,7 +12,7 @@ body {
     padding: 0;
     font-family: 'Levi Windows', sans-serif;
     font-size: 30px;
-    background: url('images/win95.webp');
+    background: url('../images/win95.webp');
 }
 nav, 
 main, 
