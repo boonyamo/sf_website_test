@@ -1,2 +1,2 @@
 # sf_website_test
-Сайт-визитка для Skillfactory
+Сайт-визитка для SkillFactory
